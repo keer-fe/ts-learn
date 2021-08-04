@@ -1,4 +1,4 @@
-import './class'
+import './basic/class'
 
 let hello: string = 'Hello TS'
 
