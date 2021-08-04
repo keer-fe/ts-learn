@@ -1,4 +1,4 @@
-import './interface'
+import './function'
 
 let hello: string = 'Hello TS'
 
