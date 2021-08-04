@@ -1,4 +1,4 @@
-import './enum'
+import './interface'
 
 let hello: string = 'Hello TS'
 
