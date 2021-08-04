@@ -53,4 +53,33 @@ interface Names {
   // y: number 不被允许，因为上面已经声明了值为字符串
   [index: number]: string // 两种签名可以混用，但是必须是上面 String 类型的子类型
 }
-let a
+
+// 函数类型接口
+// let add: (x: number, y: number) => number // 用变量来定义函数类型
+
+// interface Add { // 用接口来定义函数类型
+//   (x: number, y: number): number
+// }
+
+type Add = (x: number, y: number) => number // 使用类型别名定义函数类型
+
+let add: Add = (a, b) => a + b
+
+// 混合类型接口
+interface Lib {
+  (): void;
+  version: string;
+  doSomething(): void;
+}
+
+function getLib() {
+  let lib: Lib = (() => {}) as Lib;
+  lib.version = '1.0.0';
+  lib.doSomething = () => {};
+
+  return lib;
+}
+let lib1 = getLib();
+lib1();
+lib1.doSomething();
+let lib2 = getLib();

@@ -14,7 +14,7 @@ let tuple: [number, string] = [0, '1']
 // tuple[2]
 
 // 函数
-let add = (x: number, y: number) => x + y // 函数返回值类型可以省略，用到了 ts 的类型推断
+let addF = (x: number, y: number) => x + y // 函数返回值类型可以省略，用到了 ts 的类型推断
 let compute: (x: number, y: number) => number
 compute = (a, b) => a + b
 
