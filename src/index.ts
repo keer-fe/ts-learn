@@ -1,4 +1,4 @@
-import './function'
+import './class'
 
 let hello: string = 'Hello TS'
 
