@@ -49,3 +49,34 @@ interface Log2<T = string> {
 }
 let myLog1: Log2<number> = log4
 let myLog2: Log2 = log4
+
+// 泛型类
+// 泛型不能应用于类的静态成员 static
+class Log3<T> {
+  run(value: T) {
+    console.log(value)
+    return value
+  }
+}
+let log5 = new Log3<number>() // 指定泛型类型
+log5.run(10) // 参数只能为数值类型
+let log6 = new Log3()
+log6.run('s')
+
+// 泛型约束
+interface Length {
+  length: number
+}
+function log7<T extends Length>(value: T): T {
+  console.log(value, value.length)
+  return value
+}
+log7([1])
+log7('12')
+log7({ length: 1 })
+
+
+// 总结
+// 函数和类可以轻松的支持多种类型，增强程序的扩展性
+// 不必写多条函数重载，冗长的联合类型声明，增强代码可读性
+// 灵活控制类型之间的约束
