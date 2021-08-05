@@ -1,3 +1,5 @@
+// 类相关
+
 // 抽象类
 // 只能被继承，不能被实例化
 abstract class Animal {

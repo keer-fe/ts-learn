@@ -1,3 +1,5 @@
+// 基本类型
+
 // 原始类型
 let bool: boolean = true
 let num: number = 123

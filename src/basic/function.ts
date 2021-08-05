@@ -1,3 +1,5 @@
+// 函数相关
+
 // 函数定义
 function add1(x: number, y: number) {
   return x + y

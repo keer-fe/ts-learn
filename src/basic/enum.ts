@@ -1,3 +1,5 @@
+// 枚举类型
+
 // 数字枚举
 enum Role {
   Reporter = 1,

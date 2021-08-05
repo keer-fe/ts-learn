@@ -1,3 +1,5 @@
+// 接口
+
 interface List {
   readonly id: number; // 只读属性不允许修改
   name: string;
