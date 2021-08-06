@@ -1,4 +1,4 @@
-import './basic/generics'
+import './basic/typeChecking'
 
 let hello: string = 'Hello TS'
 
