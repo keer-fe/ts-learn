@@ -1,4 +1,4 @@
-import './basic/typeChecking'
+import './basic/indexTypes'
 
 let hello: string = 'Hello TS'
 
