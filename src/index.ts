@@ -1,4 +1,4 @@
-import './engineering/es6/c'
+import './engineering/merge/enum'
 
 let hello: string = 'Hello TS'
 
