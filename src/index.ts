@@ -1,4 +1,4 @@
-import './basic/indexTypes'
+import './engineering/es6/c'
 
 let hello: string = 'Hello TS'
 
